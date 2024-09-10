@@ -63,7 +63,7 @@ body {
 
 .inputBox {
   display: block;
-  margin: 25px;
+  margin: 15px;
   padding: 12px;
   width: 300px;
   border: 1px solid skyblue;
@@ -76,5 +76,37 @@ body {
   border: 1px solid skyblue;
   background-color: skyblue;
   cursor: pointer;
+}
 
+.invalid {
+  /* text-align: start; */
+  color: red;
+  margin-top: -15px;
+  font-size: 14px;
+  display: block;
+}
+
+/* product-list */
+.product-list {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.product-list ul li {
+  display: inline-block;
+  border: 1px solid skyblue;
+  padding: 5px;
+  width: 150px;
+}
+
+.product-list ul {
+  margin: 0;
+}
+
+.update-link {
+  text-decoration: none;
+  color: black;
+  padding: 1px 5px;
+  border-radius: 5px;
+  border: 1px solid skyblue;
 }

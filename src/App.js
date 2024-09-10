@@ -4,6 +4,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Signup from "./screens/AuthModule/Signup";
 import PrivateRoute from "./components/privateRoutes/PrivateRoute";
 import Login from "./screens/AuthModule/Login";
+import AddProduct from "./screens/Products/AddProduct";
+import Products from "./screens/Products/Products";
+import UpdateProduct from "./screens/Products/UpdateProduct";
 
 function App() {
   return (
@@ -13,9 +16,9 @@ function App() {
         <Routes>
 
           <Route element={<PrivateRoute />}>
-            <Route path="/Products" element={<h1>This is all product component</h1>} />
-            <Route path="/AddProduct" element={<h1>This is add product component</h1>} />
-            <Route path="/UpdateProduct" element={<h1>This is Update product component</h1>} />
+            <Route path="/Products" element={<Products />} />
+            <Route path="/AddProduct" element={<AddProduct />} />
+            <Route path="/UpdateProduct/:id" element={<UpdateProduct />} />
             <Route path="/Profile" element={<h1>This is user Profile component</h1>} />
             <Route path="/Logout" element={<h1>This is logout component</h1>} />
           </Route>
